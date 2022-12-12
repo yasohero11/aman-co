@@ -275,7 +275,7 @@ nav li {
 
 @media (max-width: 415px) {
   .images-preview .image-item {
-    width: 175px;
+    width: 160px;
     height: 150px;
   }
 }
