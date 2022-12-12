@@ -1,0 +1,282 @@
+/*Navbar design*/
+@font-face {
+  font-family: "AmiriFont";
+  src: url(../fonts/AmiriQuran-Regular.ttf);
+}
+
+@font-face {
+  font-family: "MessiriFontReguler";
+  src: url(../fonts/ElMessiri-Regular.ttf);
+}
+
+@font-face {
+  font-family: "MessiriFontBold";
+  src: url(../fonts/ElMessiri-Bold.ttf);
+}
+
+@font-face {
+  font-family: "MessiriFont";
+  src: url(../fonts/ElMessiri-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "MessiriFontSemi";
+  src: url(../fonts/ElMessiri-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "TajawalFontReguler";
+  src: url(../fonts/Tajawal-Regular.ttf);
+}
+
+@font-face {
+  font-family: "TajawalFontBold";
+  src: url(../fonts/Tajawal-Bold.ttf);
+}
+
+@font-face {
+  font-family: "TajawalFontExtraBold";
+  src: url(../fonts/Tajawal-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "TajawalFontMid";
+  src: url(../fonts/Tajawal-Medium.ttf);
+}
+
+@font-face {
+  font-family: "TajawalFontLight";
+  src: url(../fonts/Tajawal-Light.ttf);
+}
+
+@font-face {
+  font-family: "TajawalFontExtraLight";
+  src: url(../fonts/Tajawal-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "LemonBold";
+  src: url(../fonts/Lemonada-Bold.ttf);
+}
+
+@font-face {
+  font-family: "LemonReguler";
+  src: url(../fonts/Lemonada-Regular.ttf);
+}
+
+@font-face {
+  font-family: "LemonLight";
+  src: url(../fonts/Lemonada-Light.ttf);
+}
+
+:root {
+  --body-theme:#0c1017;
+  --continer-theme:#21262d;
+  --text-color:#fff;
+  --formatBtn-color: #313131;
+}
+
+body {
+  /*#212121
+          $background : #1c1c1c;
+      $card : #1c1e21;
+      var(--continer-theme): #2A2A2A;
+      var(--formatBtn-color) : #313131;
+          */
+  background-color: var(--body-theme);
+  /*   font-family: 'Arsenal', sans-serif;
+          font-family: 'Asap Condensed', sans-serif;
+          font-family: sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+body p {
+  font-family: MessiriFontReguler;
+}
+
+nav {
+  font-family: AmiriFont,"Open Sans", sans-serif;
+}
+
+nav .navbar-brand {
+  font-size: 30px;
+}
+
+nav li {
+  font-size: 20px;
+}
+
+.title {
+  font-family: AmiriFont;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner .image-section {
+  position: relative;
+}
+
+.banner .image-section img {
+  border-radius: 12px;
+}
+
+.banner .description-section {
+  display: none;
+}
+
+.banner .description-section2 {
+  position: absolute;
+  width: 400px;
+  text-align: start;
+  bottom: -150px;
+  left: -50px;
+}
+
+.banner .description-section2, .banner .description-section {
+  background-color: var(--continer-theme);
+  color: var(--text-color);
+  border-radius: 12px;
+}
+
+.banner .description-section2 h4, .banner .description-section h4 {
+  font-family: LemonReguler;
+}
+
+.banner .description-section2 p, .banner .description-section p {
+  font-family: MessiriFontReguler;
+  font-size: 20px;
+}
+
+.banner .description-section2 a, .banner .description-section a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 23px;
+  padding: 0px 17px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+
+.banner .description-section2 a:hover, .banner .description-section a:hover {
+  background-color: #2f343b;
+}
+
+.banner h1 {
+  font-family: LemonReguler;
+  max-width: 60%;
+  font-size: 28px;
+}
+
+.aboutus {
+  margin-top: 250px;
+  margin-bottom: 80px;
+}
+
+.aboutus p {
+  font-family: MessiriFontReguler;
+  font-size: 20px;
+}
+
+.square {
+  font-family: MessiriFontReguler;
+  position: relative;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white !important;
+  text-decoration: none !important;
+  z-index: 5;
+  background: linear-gradient(45deg, #ff0b0b -5%, #6d2626);
+  min-height: 100px;
+  padding-top: 8px;
+  padding-right: 8px;
+}
+
+.square i {
+  font-size: xx-large;
+}
+
+.square::before, .square::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  border-radius: 30px;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.prev-work-boxes div {
+  background-color: #21262d;
+  width: 100px;
+  padding: 15px 10px;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+.prev-work-boxes div i {
+  font-size: 35px;
+}
+
+.images-preview .image-item {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.images-preview .image-item img {
+  cursor: -webkit-zoom-in !important;
+  cursor: zoom-in !important;
+  min-height: 170px;
+}
+
+@media (max-width: 962px) {
+  .description-section2 {
+    position: absolute;
+    width: 300px !important;
+    text-align: start;
+  }
+  .description-section2 h4 {
+    font-family: LemonReguler;
+    font-size: large;
+  }
+  .description-section2 p {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 614px) {
+  .square {
+    min-height: 130px;
+  }
+  .aboutus {
+    margin-top: 70px;
+  }
+  .description-section {
+    display: block !important;
+  }
+  .description-section2 {
+    display: none;
+  }
+  .banner h1 {
+    max-width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 415px) {
+  .images-preview .image-item {
+    width: 175px;
+    height: 150px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
