@@ -161,10 +161,11 @@ nav li {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 8px;
+  background-color: #2f343b;
 }
 
 .banner .description-section2 a:hover, .banner .description-section a:hover {
-  background-color: #2f343b;
+  background-color: #791d1d;
 }
 
 .banner h1 {
